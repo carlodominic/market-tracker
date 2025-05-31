@@ -7,17 +7,15 @@ const CryptoChart = () => {
 
   return (
     <div className="w-full">
-      {/* Container for the chart with explicit height */}
       <div 
         className="w-full rounded-lg overflow-hidden border border-border/50" 
-        style={{ height: "500px" }} // Set desired height here
+        style={{ height: "500px" }}
       >
         <AdvancedChart
           widgetProps={{
             symbol: "BINANCE:BTCUSDT",
             theme: theme === "dark" ? "dark" : "light",
             locale: "en",
-            // Remove autosize to control dimensions manually
             hide_side_toolbar: false,
             allow_symbol_change: true,
             interval: "D",
